@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Interactive Topo Map</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="map-container">
+  
+  <!-- Floating popup -->
+  <div id="tooltip"></div>
+
+  <!-- Your SVG -->
+  <svg id="topo-svg" viewBox="0 0 1000 800">
+
+    <!-- EXAMPLE contour line -->
+    <path 
+      class="contour"
+      d="M200,300 C400,200 600,400 800,300"
+      data-info="Elevation: 500m"
+    />
+
+    <!-- Add your real paths here -->
+  </svg>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
