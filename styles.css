@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#map-container {
+  position: relative;
+}
+
+/* Tooltip */
+#tooltip {
+  position: absolute;
+  pointer-events: none;
+  padding: 6px 10px;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  display: none;
+  white-space: nowrap;
+}
+
+/* Contour lines default */
+.contour {
+  stroke: #444;
+  stroke-width: 2;
+  fill: none;
+  transition: stroke 0.2s, stroke-width 0.2s;
+}
+
+/* Highlighted contour */
+.contour:hover {
+  stroke: #ff6600;
+  stroke-width: 4;
+  cursor: pointer;
+}
