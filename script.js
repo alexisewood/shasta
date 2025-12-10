@@ -29,4 +29,3 @@ contours.forEach(path => {
     alert(`Clicked: ${path.id}`);
   });
 });
-
