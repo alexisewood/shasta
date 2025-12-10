@@ -5,22 +5,28 @@
   <title>Interactive Topo Map</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
 <div id="map-container">
-  
+
   <!-- Floating popup -->
   <div id="tooltip"></div>
 
-  <!-- SVG -->
-  <svg id="shasta_edit.svg" viewBox="0 0 1000 800">
+  <!-- svg -->
+  <svg id="topo-map" viewBox="0 0 1686 950">
 
-    <!-- contour lines -->
-  
+    <!-- ⭐⭐⭐ PLACE ALL YOUR <path> tags HERE ⭐⭐⭐ -->
+    <!-- Example paths — replace with your actual ones -->
+    <path id="elev-7400" class="contour" d="M10 10 L200 10" />
+    <path id="elev-7600" class="contour" d="M10 40 L200 40" />
+    <path id="elev-7800" class="contour" d="M10 70 L200 70" />
+    <!-- ⭐⭐⭐ END OF PATH INSERTION AREA ⭐⭐⭐ -->
 
   </svg>
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
